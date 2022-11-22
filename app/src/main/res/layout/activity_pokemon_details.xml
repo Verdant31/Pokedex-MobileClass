@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#202020"
+    tools:context=".PokemonDetailsActivity"
+    tools:layout_editor_absoluteX="5dp"
+    tools:layout_editor_absoluteY="-16dp">
+
+    <ImageView
+        android:id="@+id/poke_image2"
+        android:layout_width="411dp"
+        android:layout_height="107dp"
+        android:background="#202020"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/special_at_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="84dp"
+        android:background="#202020"
+        android:text="@string/special_attack"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/defense_value"
+        android:layout_width="103dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="112dp"
+        android:background="#202020"
+        android:inputType="textCapSentences"
+        android:text="@string/valor_do_nome"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/defense_label"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/hp_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="166dp"
+        android:background="#202020"
+        android:text="@string/hp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/special_at_value"
+        android:layout_width="103dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="84dp"
+        android:background="#202020"
+        android:inputType="textCapSentences"
+        android:text="@string/valor_do_nome"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/special_at_label"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/hp_value"
+        android:layout_width="103dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="166dp"
+        android:background="#202020"
+        android:inputType="textCapSentences"
+        android:text="@string/valor_do_nome"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hp_label"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/attack_value"
+        android:layout_width="103dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="140dp"
+        android:background="#202020"
+        android:inputType="textCapSentences"
+        android:text="@string/valor_do_nome"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/attack_label"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/defense_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="112dp"
+        android:background="#202020"
+        android:text="@string/defense"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/speed_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="28dp"
+        android:background="#202020"
+        android:text="@string/speed"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/attack_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="140dp"
+        android:background="#202020"
+        android:text="@string/Attack"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/special_df_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="56dp"
+        android:background="#202020"
+        android:text="@string/special_defense"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/speed_value"
+        android:layout_width="103dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="28dp"
+        android:background="#202020"
+        android:inputType="textCapSentences"
+        android:text="@string/valor_do_nome"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/speed_label"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/special_df_value"
+        android:layout_width="103dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="56dp"
+        android:background="#202020"
+        android:inputType="textCapSentences"
+        android:text="@string/valor_do_nome"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/special_df_label"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/moves_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="548dp"
+        android:background="#202020"
+        android:text="@string/movimentos"
+        android:textColor="#BCB2B2"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="576dp"
+        android:background="#202020"
+        android:text="@string/nome"
+        android:textColor="#BCB2B2"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ListView
+        android:id="@+id/types_listview"
+        android:layout_width="233dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="290dp"
+        android:layout_marginEnd="116dp"
+        android:background="#202020"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/types_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="424dp"
+        android:background="#202020"
+        android:text="@string/tipos"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ListView
+        android:id="@+id/abilities_listview"
+        android:layout_width="233dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginEnd="116dp"
+        android:background="#202020"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/moves_listview"
+        android:layout_width="233dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="116dp"
+        android:background="#202020"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/skills_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="300dp"
+        android:background="#202020"
+        android:text="@string/habilidades"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/name_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginBottom="576dp"
+        android:background="#202020"
+        android:inputType="textCapSentences"
+        android:text="@string/valor_do_nome"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
